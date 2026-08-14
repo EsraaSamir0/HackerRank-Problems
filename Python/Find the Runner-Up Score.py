@@ -1,0 +1,7 @@
+if __name__ == '__main__':
+    n = int(input())
+    arr = map(int, input().split())
+    scores = set(arr)
+    scores.remove(max(scores))
+    runner_up = max(scores)
+    print(runner_up)
